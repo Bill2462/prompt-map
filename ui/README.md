@@ -48,7 +48,7 @@ datadir
 
 To prepare it, first download the db_final.parquet and diffusiondb.parquet from the dataset repository: [https://huggingface.co/datasets/Bill2462/PromptMap](https://huggingface.co/datasets/Bill2462/PromptMap), then rename diffusiondb.parquet and move it to `diffusion_db`.
 
-Download diffusiondb image db shards from the same repository and merge shards using the following command: `cat ls.?? > data`. Separately download `lock.mdb`. Finally download map and search indexes.
+Download diffusiondb image db shards from the same repository and merge shards using the following command: `cat ??? > data.mdb`. Separately download `lock.mdb`. Finally download map and search indexes.
 
 To prepare model directory please clone the following models with `git clone` there:
 

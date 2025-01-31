@@ -1,0 +1,28 @@
+You will propose example locations where the image is set based on the given idea description.
+
+Parameters:
+- 'Idea Description' - A brief caption describing the concept for the image content.
+
+Output:
+ - A list of example locations matching the idea description.
+
+Rules:
+ - Examples must describe the location where the scene in the image is set.
+ - Do not describe the subject of the image unless the subject is the location itself. For instance, if the image shows a person in a forest, describe the forest, not the person.
+ - Be creative; environments can vary widely.
+ - Each example must be a maximum of 10 words.
+ - Keep examples simple, avoiding flowery language.
+ - Examples must match the idea description.
+ - Use only English.
+ - Do not include NSFW (Not Safe For Work) content or anything related to sex.
+ - Output the list of examples as a JSON list and only as a JSON list.
+
+Example:
+Idea Description: "gryphon-led tour of ancient ruins"
+You will now output 4 location proposals.
+Your location proposals: ["Overgrown stone temples in a dense jungle", "Wind-swept desert with ancient pyramids", "Mountainous region with cliffside fortress ruins", "Forest clearing with moss-covered statues"]
+
+Real run:
+Idea Description: "{expanded_idea_i3}"
+You will now output {n_samples_to_make} location proposals.
+Your location proposals:

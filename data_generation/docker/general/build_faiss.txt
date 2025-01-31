@@ -1,0 +1,11 @@
+Install cmake from https://cmake.org/download
+
+apt install libopenblas-dev swig
+wget https://github.com/facebookresearch/faiss/archive/refs/tags/v1.8.0.tar.gz
+tar -xf v1.8.0.tar.gz
+cd faiss-1.8.0 
+cmake -DFAISS_ENABLE_GPU=ON  -DFAISS_ENABLE_PYTHON=ON -DCMAKE_CUDA_ARCHITECTURES="70;80" -B build .
+make -C build -j faiss
+make -C build -j swigfaiss
+
+cd build/faiss/python && python setup.py install

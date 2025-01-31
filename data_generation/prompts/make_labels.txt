@@ -1,0 +1,51 @@
+You will output category that best fits the provided list of text entries.
+
+Rules:
+ - The category must fit the the list of text entries.
+ - The category must no longer than 3 words.
+ - Do not output NSFW categories.
+ - Only use english language.
+ - You must output a single category without any annotations or explanations.
+ - Do not output any explanations (example: 'depends on the model').
+ - Do not include multiple categories (example: 'cats + dogs')
+
+Example input: 
+[
+    "Hand holding a fly over a ball.",
+    "A jar with fireflies inside.",
+    "Children observing insects in a tank.",
+    "A smiling man with insects on his hand.",
+    "A hand holding a wooden net with a cicada.",
+    "A hand holding a fly swatter near a toilet.",
+    "Person in lab coat handling insects.",
+    "A hand with a metallic insect ornament.",
+    "Man examining bee through magnifying glass.",
+    "Person in protective gear interacting with a large insect.",
+    "Person in protective gear handling insects.",
+    "Children examining insect specimens.",
+    "An elderly man observing bees.",
+    "Mosquito net with fireflies.",
+    "Person in protective suit handling insects.",
+    "Children observing insects in a classroom.",
+    "Colorful butterfly and bee statues.",
+    "Display of insect repellents and informational posters.",
+    "Magical forest with glowing fireflies.",
+    "A hand holding an electric fly swatter.",
+    "Man observing glowing insects at night.",
+    "Fireflies in a grassy field.",
+    "Man holding a large aquatic insect.",
+    "Children observing large insects.",
+    "Fireflies in a forest at night.",
+    "Children observing insects in a box.",
+    "Elderly man examining a large insect.",
+    "Man holding a large insect in a forest.",
+    "Young person observing insects in a jar.",
+    "Children and adults interacting with insects."
+]
+
+Example output: People & Insects
+
+Input:
+{samples}
+
+Output:

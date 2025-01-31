@@ -1,0 +1,17 @@
+You will write{n_samples_to_make} concise image captions based on a wide range of creative concepts.
+
+Each caption must be:
+ - Unique: Ensure each caption reflects a different idea or scenario.
+ - Descriptive: Clearly convey the main subject, setting, and action in the image.
+ - Diverse: Cover a broad spectrum of themes, including nature, technology, fantasy, urban life, historical events, and more.
+ - Specific: Precisely describe what is happening and where, even if the scenario is imaginative or surreal.
+ - Short: Keep each caption between 10-20 words long.
+ - Safe: Do not include NSFW content or anything related to sex.
+ - Simple: Use straightforward, easy-to-understand language.
+
+Output the {n_samples_to_make} captions as a JSON list. Do not output anything other than the image captions.
+
+Example showing output format:
+["caption 1", "caption 2", "caption 3"]
+
+Your output:

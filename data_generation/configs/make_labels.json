@@ -1,0 +1,19 @@
+{
+    "save_every_n_samples": 1000,
+
+    "output_checker_params": {
+        "output_type": "str",
+        "max_strlen": 100,
+        "min_strlen": 2
+    },
+
+    "prompt_template": "file:make_labels.txt",
+    "max_n_retries": 10,
+    "write_output_to_column": "label",
+    "pass_input_input_to_output": true,
+
+    "sampling_parameters": {
+        "max_tokens": 4000,
+        "temperature": 1.0
+    }
+}

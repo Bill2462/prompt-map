@@ -1,0 +1,30 @@
+You will generate examples of the main subject of an image based on the provided idea description and location description.
+
+Parameters:
+ - 'Location' - Short caption describing where the image scene is set.
+ - 'Idea Description' - Short caption describing the concept of the image content.
+
+Output:
+ - List of main subject examples that match the idea description and location description.
+
+Rules:
+ - Describe the main subject of the image, not the location (unless the subject is the location itself).
+ - Be creative; vary the subjects.
+ - Keep each example to a maximum of 10 words.
+ - Use simple, clear language; avoid flowery expressions.
+ - Ensure examples align with both the idea description and location.
+ - Use only English.
+ - Do not include NSFW (Not Safe For Work) or sexually explicit content.
+ - Output a list of examples in JSON format, and only in JSON format.
+
+Example:
+Idea Description: "a phoenix plunging its beak into a fiery underground lake"
+Location: "lava falls cascading into an obsidian pool"
+You will now output 4 main subject proposals.
+Your main subject proposals: ["Phoenix drinking from a lava lake", "Fiery phoenix at a glowing lava pool", "Phoenix dipping beak into molten fire", "Phoenix consuming flames from underground lava"]
+
+Real run:
+Idea Description: "{expanded_idea_i3}"
+Location: "{location}"
+You will now output {n_samples_to_make} main subject proposals.
+Your main subject proposals:

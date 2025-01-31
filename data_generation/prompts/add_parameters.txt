@@ -1,0 +1,30 @@
+You will be given a short caption describing an image. Based on this caption, provide the most likely descriptions for the following parameters:
+ - lighting: Describe the use of light and shadows in the image.
+ - mood: Describe the atmosphere and emotions conveyed by the image.
+ - tone: Describe the chromatic composition of the image.
+ - genre: Identify the genre of the image.
+
+Rules:
+ - Ensure your descriptions match the given caption.
+ - Use only English.
+ - Do not include hashtags.
+ - Each description must be a maximum of 10 words.
+ - Format your response as a JSON object. Do not output anything other than the JSON object with your parameters.
+
+Example:
+Caption: "a majestic, fire-breathing wyvern perched beside a glowing seaside lantern, in an enchanted cove."
+Your output:
+{
+"lighting": "Warm glow with flickering shadows",
+"mood": "Enchanting and mystical",
+"tone": "Warm and vibrant",
+"genre": "Fantasy"
+}
+
+You must output only JSON object as shown above.
+
+Real run:
+Caption: "{caption}"
+Your output:
+{
+"lighting":

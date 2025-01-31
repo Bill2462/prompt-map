@@ -46,8 +46,7 @@ datadir
     └── tone.idx
 ```
 
-To prepare it, first download the db_final.parquet and diffusiondb.parquet from the dataset repository linked on our github:
-`https://github.com/Bill2462/prompt-map`, then rename diffusiondb.parquet and move it to `diffusion_db`.
+To prepare it, first download the db_final.parquet and diffusiondb.parquet from the dataset repository: [https://huggingface.co/datasets/Bill2462/PromptMap](https://huggingface.co/datasets/Bill2462/PromptMap), then rename diffusiondb.parquet and move it to `diffusion_db`.
 
 Download diffusiondb image db shards from the same repository and merge shards using the following command: `cat ls.?? > data`. Separately download `lock.mdb`. Finally download map and search indexes.
 

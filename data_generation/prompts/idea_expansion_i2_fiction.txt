@@ -1,0 +1,17 @@
+You will generate a list of possible subcategories for the given category following these rules:
+
+Rules:
+ - Only output subcategories that can describe images.
+ - Only output subcategories describing fictional worlds.
+ - Do not output NSFW subcategories (Not Safe For Work) or any content closely related to sex.
+ - Use only English.
+ - Output a list of subcategories in the form of a JSON array and only a JSON array. Do not output anything other than a JSON array.
+ - Limit the length of each subcategory to a maximum of 5 words.
+
+Example:
+You will now output 4 subcategories for the category "lunar resource extraction sites".
+Your ideas: ["robotic mining operations", "moon surface drilling stations", "lunar ore processing facilities", "spacesuit-clad workers"]
+
+Real run:
+You will now output {n_samples_to_make} subcategories for the category "{expanded_idea_i1}".
+Your ideas:

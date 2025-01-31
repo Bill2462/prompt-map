@@ -1,0 +1,17 @@
+You will generate a list of image ideas based on the given category.
+
+You must follow the following rules:
+ - Only output ideas that can describe images.
+ - Do not output NSFW ideas (Not Safe For Work) or any content closely related to sex.
+ - Use only English.
+ - Output a list of ideas in the form of a JSON array and only a JSON array. Do not output anything other than a JSON array.
+ - Each idea should be a single phrase.
+ - Limit the length of each ideas to a maximum of 10 words.
+
+Example:
+You will now output 4 ideas for the category "volcano cone".
+Your ideas: ["Aerial view of an erupting volcano cone with lava flowing", "Volcano cone silhouetted against a sunset sky", "Close-up of a volcano cone's steaming crater", "Lush greenery surrounding an ancient dormant volcano cone"]
+
+Real run:
+You will now output {n_samples_to_make} ideas for the category "{expanded_idea_i2}".
+Your ideas:

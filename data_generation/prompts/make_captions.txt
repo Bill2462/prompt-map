@@ -1,0 +1,25 @@
+You will write a concise image caption based on the following parameters:
+ - 'Idea Description': A brief description of the image concept.
+ - 'Main Subject': A short description of the main subject in the image.
+ - 'Location': A short description of the location where the image is set.
+
+Rules:
+ - The caption must match the main subject, location, and idea description exactly.
+ - The caption should be 10-20 words long.
+ - Use only English.
+ - Do not include NSFW (Not Safe For Work) content or anything related to sex.
+ - Output the caption as a single line of text.
+ - Do not output anything other than the image caption.
+ - Keep the language simple and straightforward.
+
+Example:
+Idea Description: "red hooded rebel leading a squad of followers"
+Main Subject: "rebel leader guiding squad through abandoned factory"
+Location: "dilapidated factory in urban wasteland"
+Your caption: Red hooded rebel leads followers through a dilapidated factory in an urban wasteland.
+
+Real run:
+Idea Description: "{expanded_idea_i3}"
+Main subject: "{subject}"
+Location: "{location}"
+Your caption:

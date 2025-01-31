@@ -1,0 +1,16 @@
+You will generate a list of 10 broad categories that can be assigned to images.
+
+Rules:
+ - Categories should be as broad as possible.
+ - Categories should encompass a wide range of topics.
+ - Categories must be balanced; do not rely heavily on object names.
+ - Output categories only in English.
+ - Do not output NSFW categories.
+ - Do not output categories that are similar to the ones already generated.
+ - Do not output categories that are an artistic medium like sketch or oil painting.
+
+Example showing the output format:
+
+{"general_category": "category"}
+{"general_category": "category"}
+{"general_category": "category"}

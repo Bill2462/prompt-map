@@ -1,0 +1,11 @@
+{
+    "model_path": "/netscratch/adamkiewicz/models/Mistral-7B-Instruct-v0.2",
+    "batch_size": 1024,
+    "vllm_args":
+    {
+        "dtype": "bfloat16",
+        "gpu_memory_utilization": 0.95,
+        "swap_space": 16,
+        "enforce_eager": false
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "save_every_n_samples": 1000,
+
+    "output_checker_params": {
+        "output_type": "list[str]",
+        "min_len": 10,
+        "clip_at": 10,
+        "max_strlen": 500,
+        "min_strlen": 2
+    },
+
+    "prompt_template": "file:add_location.txt",
+    "max_n_retries": 10,
+    "write_output_to_column": "location",
+    "pass_input_input_to_output": true,
+
+    "sampling_parameters": {
+        "max_tokens": 4000,
+        "temperature": 1.0
+    },
+
+    "prompt_args": {
+        "n_samples_to_make": 13
+    }
+}

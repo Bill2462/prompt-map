@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" initial-scale=1.0">
+<title>Prompt Cam</title>
+<link rel="stylesheet" href="/static/css/condition_2.css">
+</head>
+<body>
+
+<div id="title-bar">
+Finding Inspirations in diffusionDB
+</div>
+
+<div id="main-content">
+    <div id="left-panel">
+        <h2>1. Task</h2>
+        <div id="task-field">
+        </div>
+
+        <h2>2. Find Inspirations</h2>
+        <label for="search-text-area">What do you want to find?</label>
+        <input type="text" id="search-text-area" placeholder="Example: misty forests" style="font-size: 16px;">
+        <button id="search-bt" class="button" style="font-size: 16px;">Search</button>
+
+        <h2>4. Craft Prompt</h2>
+        <label for="prompt-text-area">Prompt</label>
+        <textarea id="prompt-text-area" rows="3" placeholder="Enter your prompt here..."></textarea>
+        <button id="gen-image-bt" class="button" style="font-size: 16px;">Generate Images</button>
+    </div>
+
+    <div id="canvas-container">
+        <h2>3. Search results</h2>
+        <div id="search-results" class="image-grid">Search results will be displayed here.</div>
+    </div>
+
+    <div id="right-panel">
+        <h2>5. Generated Images</h2>
+        <div id="user-output-list" class="image-list">
+        </div>
+
+        <h2>6. Submit Solution</h2>
+        <div id="solution-container" class="image-entry"></div><br> 
+        <button id="submit-solution-bt" class="submit-button" style="font-size: 16px;">Submit Task Solution</button>
+    </div>
+</div>
+
+<!-- Popup Window Template -->
+<div id="popup-window" class="popup-window" style="display: none;">
+    <span class="close-btn" style="font-size: 16px;">x</span>
+    <div id="popup-content" style="font-size: 16px;"></div><br>
+    <button id="copy-prompt-bt">Copy Prompt</button>
+</div>
+
+<script>
+    const popupWindow = document.getElementById('popup-window');
+    const promptTextArea = document.getElementById('prompt-text-area');
+
+    popupWindow.addEventListener('click', function(event) {
+            const prompt = document.getElementById('popup-content').textContent;
+            promptTextArea.value = prompt;
+            document.getElementById("gen-image-bt").disabled = false;
+    });
+</script>
+</div>
+
+<div id="image-modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-image">
+</div>
+
+<script type="module" src="/static/js/condition_2_main.js"></script>
+
+</body>
+</html>

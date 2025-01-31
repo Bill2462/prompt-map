@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UI tutorial</title>
+<script>
+function getCookie(name) {
+    let match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+    if (match) return match[2];
+    return null;
+}
+
+window.onload = function() {
+    const condition = getCookie('condition');
+    const prolificPid = getCookie('prolificPid');
+    const youtubeUrl = getCookie('youtubeUrl');
+
+    document.getElementById('videoFrame').src = youtubeUrl;
+    document.getElementById('nextPhaseLink').href = `/conditions/${condition}?prolificPid=${prolificPid}`;
+};
+</script>
+</head>
+<body>
+<h2>Now please watch the video tutorial for the interface that you will be using.</h2>
+
+<iframe id="videoFrame" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<p>After watching the video, please click the link below to proceed to the next phase of the study.</p>
+<p><a id="nextPhaseLink" href="#">Next Phase</a></p>
+</body>
+</html>

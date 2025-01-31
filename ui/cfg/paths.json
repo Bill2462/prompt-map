@@ -1,0 +1,20 @@
+{
+    "sd_path": "/models/sdxl-turbo",
+    "clip_model_path": "",
+    "sentence_transformer_model_path": "/models/all-mpnet-base-v2",
+    
+    "main_db_path": "/datadir/db_final.parquet",
+    "diffusion_db_path": "/datadir/diffusion_db/db.parquet",
+
+    "search_indexes_path": "/datadir/search_indexes",
+    "point_positions_path": "/datadir/map/point_positions.npy",
+    "map_path": "/datadir/map/labels.parquet",
+
+    "diffusion_db_search_index_path": "/datadir/diffusion_db/db.index",
+
+    "main_img_db_path": "/datadir/img/promptmap",
+    "diffusiondb_img_db_path": "/datadir/img/diffusiondb",
+
+    "logdir": "/datadir/logdir",
+    "final_logdir": "/datadir/final_logdir"
+}

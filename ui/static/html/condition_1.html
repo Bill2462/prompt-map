@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" initial-scale=1.0">
+<title>Prompt Cam</title>
+<link rel="stylesheet" href="/static/css/condition_1.css">
+</head>
+<body>
+
+<div id="title-bar">
+Generating Images from Text Prompts
+</div>
+
+<div id="main-content">
+    <div id="left-panel">
+        <h2>1. Task</h2>
+        <div id="task-field">
+        </div>
+
+        <h2>2. Craft Prompt</h2>
+        <label for="prompt-text-area">Prompt</label>
+        <textarea id="prompt-text-area" rows="3" placeholder="Enter your prompt here..." style="font-size: 16px;"></textarea>
+        <button id="gen-image-bt" class="button" style="font-size: 16px;">Generate Images</button>
+    </div>
+
+    <div id="canvas-container">
+        <h2>3. Generated Images</h2>
+        <div id="user-output-list" class="image-list">
+        </div>
+    </div>
+
+    <div id="right-panel">
+        <h2>4. Submit Solution</h2>
+        <div id="solution-container" class="image-entry"></div><br> 
+        <button id="submit-solution-bt" class="submit-button" style="font-size: 16px;">Submit Task Solution</button>
+    </div>
+</div>
+
+<div id="image-modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-image">
+</div>
+
+<script type="module" src="/static/js/condition_1_main.js"></script>
+
+</body>
+</html>

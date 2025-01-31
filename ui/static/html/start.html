@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome</title>
+<script>
+// Function to get the value of a specific cookie
+function getCookie(name) {
+    let cookieArr = document.cookie.split(";");
+    for(let i = 0; i < cookieArr.length; i++) {
+        let cookiePair = cookieArr[i].split("=");
+        if(name === cookiePair[0].trim()) {
+            return decodeURIComponent(cookiePair[1]);
+        }
+    }
+    return null;
+}
+
+// Function to log user information and cookies
+function logUserInfo() {
+    let prolificPid = getCookie("prolificPid");
+    let condition = getCookie("condition");
+
+    // Browser information
+    let browserInfo = {
+        userAgent: navigator.userAgent,
+        platform: navigator.platform,
+        screenWidth: window.screen.width,
+        screenHeight: window.screen.height,
+        prolificPid: prolificPid,
+        condition: condition
+    };
+
+    // Send the data to /api/log/userInfo
+    fetch('/api/log/userInfo', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(browserInfo)
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('User info logged:', data);
+    })
+    .catch((error) => {
+        console.error('Error logging user info:', error);
+    });
+}
+
+// On page load, log user information and redirect the user
+window.onload = function() {
+    logUserInfo(); // Log the browser info and cookie values
+
+    let prolificPid = getCookie("prolificPid");
+    if (prolificPid) {
+        let redirectUrl = "https://koala-sharp-endlessly.ngrok-free.app/sdTutorial?prolificPid=" + prolificPid;
+        window.location.href = redirectUrl;
+    }
+};
+</script>
+</head>
+<body>
+<h1>You should be redirected now, if not please click the following link.</h1>
+<script>
+    // Generate the fallback link with the PROLIFIC_PID
+    let prolificPid = getCookie("prolificPid");
+    if (prolificPid) {
+        let redirectUrl = "https://koala-sharp-endlessly.ngrok-free.app/sdTutorial?prolificPid=" + prolificPid;
+        document.write('<a href="' + redirectUrl + '">Click here if you are not redirected</a>');
+    } else {
+        document.write('<p>PROLIFIC_PID cookie not found. Please ensure your browser allows cookies and try again.</p>');
+    }
+</script>
+</body>
+</html>

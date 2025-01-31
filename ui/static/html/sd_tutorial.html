@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" initial-scale=1.0">
+<title>Prompt Cam</title>
+<link rel="stylesheet" href="/static/css/sd_tutorial.css">
+</head>
+<body>
+
+<div id="title-bar">
+Text-to-image model Tutorial
+</div>
+
+<div id="main-content">
+    <div id="left-panel">
+        <h2>1. Task</h2>
+        <div id="task-field">
+        </div>
+
+        <h2>2. Craft Prompt</h2>
+        <label for="prompt-text-area">Prompt</label>
+        <textarea id="prompt-text-area" rows="3" placeholder="Enter your prompt here..." style="font-size: 16px;"></textarea>
+        <button id="gen-image-bt" class="button" style="font-size: 16px;">Generate Images</button>
+    </div>
+
+    <div id="canvas-container">
+        <h2>3. Generated Images</h2>
+        <div id="user-output-list" class="image-list">
+        </div>
+    </div>
+
+</div>
+
+<div id="image-modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-image">
+</div>
+
+<script type="module" src="/static/js/sd_tutorial.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" initial-scale=1.0">
+<title>Prompt Cam</title>
+<link rel="stylesheet" href="/static/css/condition_3.css">
+</head>
+<body>
+
+<div id="title-bar">
+Prompt Map - Large Scale Prompt Database for Finding Inspirations
+</div>
+
+<div id="main-content">
+    <div id="left-panel">
+        <h2>1. Task</h2>
+        <div id="task-field">
+        </div>
+
+        <h2>2. Find Inspirations</h2>
+
+        <label for="search-text-area">What do you want to find?</label>
+        <input type="text" id="search-text-area" placeholder="Example: misty forests" style="font-size: 16px;">
+
+        <label for="search-field">Search by</label>
+        <select id="search-field" style="font-size: 16px;">
+            <option value="subject">Subject</option>
+            <option value="genre">Genre</option>
+            <option value="mood">Mood</option>
+            <option value="lighting">Lighting</option>
+            <option value="location">Location</option>
+        </select>
+
+        <button id="search-bt" class="button" style="font-size: 16px;">Search</button>
+
+        <h2>4. Craft Prompt</h2>
+        <label for="prompt-text-area">Prompt</label>
+        <textarea id="prompt-text-area" rows="3" placeholder="Enter your prompt here..." style="font-size: 16px;"></textarea>
+        <button id="gen-image-bt" class="button" style="font-size: 16px;">Generate Images</button>
+    </div>
+
+    <div id="canvas-container">
+        <h2>3. Prompt Map</h2>
+        <a href="#" id="reset-canvas-bt" style="font-size: 20px;">Reset Map View</a>
+        <a href="#" id="toggle-img-bt" style="font-size: 20px;">Toggle Image Preview</a>
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <div id="right-panel">
+        <h2>5. Generated Images</h2>
+        <div id="user-output-list" class="image-list">
+        </div>
+
+        <h2>6. Submit Solution</h2>
+        <div id="solution-container" class="image-entry"></div><br> 
+        <button id="submit-solution-bt" class="submit-button" style="font-size: 16px;">Submit Task Solution</button>
+    </div>
+</div>
+
+<div id="image-modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-image">
+</div>
+
+<script type="module" src="/static/js/condition_3_main.js"></script>
+
+</body>
+</html>
